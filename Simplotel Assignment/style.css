@@ -1,0 +1,243 @@
+body {
+    background-color: rgb(230, 226, 226);
+}
+
+nav {
+    height: 40px;
+    width: 100%;
+    background-color: rgba(241, 49, 68, 0.796);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(128, 128, 128, 0.5) -3px 0px 2px,
+     rgba(128, 128, 128, 0.5) 3px 0px 2px, 
+     rgba(128, 128, 128, 0.5) 0px -3px 2px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-left: 130px;
+    padding: 0px;
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+ul li {
+    margin: 0px 40px;
+    padding: 0px;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+#section1 {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    box-shadow: rgba(128, 128, 128, 0.5) -3px 0px 2px,
+     rgba(128, 128, 128, 0.5) 3px 0px 2px,
+      rgba(128, 128, 128, 0.5) 0px 3px 2px;
+}
+
+#content1 {
+    height: 500px;
+    width: 50%;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-image: linear-gradient(90deg, rgb(238, 238, 147), rgb(253, 211, 218));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#heading {
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-weight: bolder;
+}
+
+#subcontent1 {
+    height: 400px;
+    width: 74%;
+}
+
+#para {
+    font-size: 19px;
+    line-height: 20px;
+}
+
+#submit {
+    margin-top: 30px;
+    color: white;
+    height: 40px;
+    width: 40%;
+    background-color: rgba(255, 85, 102, 0.796);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#section2 {
+    margin-top: 10px;
+    height: 600px;
+    width: 100%;
+    background-image: linear-gradient(90deg, rgb(238, 238, 147), rgb(253, 211, 218));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: gray 0px 0px 3px 0px;
+}
+
+#images {
+    margin-top: 25px;
+    margin-left: 30px;
+    height: 500px;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#image23 {
+    margin-left: 20px;
+    height: 400px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#image4 {
+    margin-left: 20px;
+    height: 400px;
+    width: 40%;
+}
+
+#content2 {
+    height: 225px;
+    width: 50%;
+}
+
+#subcontent2 {
+    height: 225px;
+    width: 75%;
+    background-color: rgba(255, 70, 88, 0.745);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#subcontent3 {
+    height: 200px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+#lorem {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#highlight {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 50px;
+    letter-spacing: 4px;
+    font-weight: bolder;
+}
+
+#lastbox {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ul.desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+    }
+
+    .mobile-menu li {
+        margin: -25px;
+    }
+
+    .mobile-menu li:last-child {
+        margin-left: -100px;
+    }
+
+    #section1 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #heading {
+        font-size: 40px;
+        margin-top:-30px;
+    }
+
+    #content1 {
+        height: 600px;
+        width: 100%;
+    }
+
+    #submit {
+        margin-top: 70px;
+        width: 80%;
+    }
+
+    #image img {
+        margin-top: 10px;
+        height: auto;
+        width: 100%;
+    }
+
+    #section2 {
+        height: 700px;
+        display: inline-block;
+        background-image: linear-gradient(90deg, rgb(238, 238, 147), rgb(253, 211, 218));
+    }
+
+    #images {
+        height: 80px;
+        margin-top: 180px;
+        margin-left: -15px;
+        width: auto;
+    }
+
+    #image23, #image4 {
+        height: 400px;
+        width: 500px;
+    }
+
+    #content2 {
+        width: 100%;
+    }
+
+    #subcontent2 {
+        height: 250px;
+        margin-top: 180px;
+        width: 100%;
+    }
+
+    #highlight {
+        font-size: 30px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+}
